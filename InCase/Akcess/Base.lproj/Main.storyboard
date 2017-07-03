@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle.png" id="DW2-em-Q3E">
+                                <rect key="frame" x="40" y="0.0" width="240" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background2.png" id="FWK-vn-Kbs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newgreyborder.png" id="1bR-nI-tze">
+                                <rect key="frame" x="69" y="144" width="230" height="379"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" id="G5p-mq-hpb">
+                                <rect key="frame" x="69" y="314" width="230" height="77"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="7bl-KK-rbM"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3d3-rR-CWe">
+                                <rect key="frame" x="142" y="444" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <state key="normal" title="Enter" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="EnterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IFD-XJ-DLz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greyreck.png" id="ZzC-lT-nZ0">
+                                <rect key="frame" x="69" y="301" width="230" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.583984375" green="0.583984375" blue="0.583984375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greyreck.png" id="G51-oW-Yms">
+                                <rect key="frame" x="69" y="392" width="230" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58630859380000011" green="0.58630859380000011" blue="0.58630859380000011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="InCaseLOGO.png" id="f0I-1w-el4">
+                                <rect key="frame" x="118" y="171" width="138" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="Location" destination="G5p-mq-hpb" id="enn-Pi-E9X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248.5" y="430.5"/>
+        </scene>
+        <!--Agreement View Controller-->
+        <scene sceneID="hgF-sl-Q3P">
+            <objects>
+                <viewController storyboardIdentifier="AgreementViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jwj-Jt-szG" customClass="AgreementViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mdd-sP-Ocd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background2.png" id="CZ4-jU-mLo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fW6-zc-Srh">
+                                <rect key="frame" x="142" y="561" width="90" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <state key="normal" title="Accept" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AcceptButton:" destination="jwj-Jt-szG" eventType="touchUpInside" id="4uP-5V-t0I"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newgreyborder.png" id="qP1-Ue-4ym">
+                                <rect key="frame" x="67" y="76" width="240" height="465"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="0.99349832214765099" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" id="xyQ-rK-cYM">
+                                <rect key="frame" x="67" y="76" width="240" height="458"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Agree to these terms of conditions to proceed:
+
+----------------------------------
+
+I agree that this information may or may not be valid. This is purely a project but may later be used for future documentation. 
+
+If you are in imidiate assistance do not rely on this application, please refer to a lawyer.
+
+If you are in an emergency situation, please call the appropriate people (police, fire department, abmulance...)
+
+This is purely information to help you find everyday “know your rights” needs.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQ8-Yu-O5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809.5" y="430.5"/>
+        </scene>
+        <!--Side View Controller-->
+        <scene sceneID="Ats-EX-NPe">
+            <objects>
+                <viewController storyboardIdentifier="SideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yn3-1a-B7h" customClass="SideViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Zu-p6-ZhJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background2.png" id="M2i-AP-0uA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AdG-8z-rOB">
+                                <rect key="frame" x="104" y="520" width="166" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Back" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Backbtn:" destination="yn3-1a-B7h" eventType="touchUpInside" id="vYS-6Z-XvE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What do you want to know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t4g-OJ-7Nn">
+                                <rect key="frame" x="30" y="53" width="315" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" red="0.98292796083591094" green="0.98791323183970581" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle.png" id="H5c-nN-X5O">
+                                <rect key="frame" x="67" y="88" width="240" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greyreck.png" id="mFb-Ta-x2r">
+                                <rect key="frame" x="0.0" y="136" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72646439386702544" green="0.7301489180868419" blue="0.73908203124999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greyreck.png" id="4Gl-oh-Aq5">
+                                <rect key="frame" x="0.0" y="248" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72646439389999995" green="0.73014891810000004" blue="0.73908203120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greyreck.png" id="vzJ-cW-Ziq">
+                                <rect key="frame" x="0.0" y="363" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72646439389999995" green="0.73014891810000004" blue="0.73908203120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lawbalance.png" id="AxE-Hl-xk8">
+                                <rect key="frame" x="7" y="155" width="37" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lawbalance.png" id="OLk-Tn-fnr">
+                                <rect key="frame" x="7" y="267" width="37" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0mU-ml-W1i">
+                                <rect key="frame" x="0.0" y="248" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="What can I do?">
+                                    <color key="titleColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="s26-eS-QdO" kind="modal" id="tDr-OU-aAc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fq5-10-F9g">
+                                <rect key="frame" x="0.0" y="363" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="What can the police officer do?">
+                                    <color key="titleColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="N5j-hG-IPB" kind="modal" id="atl-pi-aXx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lawbalance.png" id="bAW-8g-P2L">
+                                <rect key="frame" x="7" y="382" width="37" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vwh-y2-hMU">
+                                <rect key="frame" x="0.0" y="136" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Various Offenses and the Penalties">
+                                    <color key="titleColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="plC-gS-EdV" kind="modal" id="Ixv-3V-uq5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZqD-hl-Nlv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbM-pr-rgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226.5" y="1346.5"/>
+        </scene>
+        <!--Side View Controller-->
+        <scene sceneID="lId-qH-yjy">
+            <objects>
+                <viewController storyboardIdentifier="CanShouldDo" id="s26-eS-QdO" customClass="SideViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3XK-rq-oYc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background2.png" id="vkL-qq-CpW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What can / should I do?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Gu-yn-VQX">
+                                <rect key="frame" x="30" y="35" width="315" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle.png" id="NeP-T9-osu">
+                                <rect key="frame" x="67" y="85" width="240" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="pleaseWork" editable="NO" text="• Stay calm and follow exactly what the police officer tells you to do." textAlignment="justified" selectable="NO" id="d6K-vv-nM9">
+                                <rect key="frame" x="26" y="123" width="322" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59447265630000001" green="0.56147173569999997" blue="0.58311180789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HtU-6X-4ID">
+                                <rect key="frame" x="104" y="568" width="166" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dfafwqeafd:" destination="s26-eS-QdO" eventType="touchUpInside" id="8Xd-gS-dgV"/>
+                                    <action selector="returnToPrev:" destination="BN6-Po-UQH" eventType="touchUpInside" id="KcV-T7-Ut5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNS-Za-Qj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="899" y="2062"/>
+        </scene>
+        <!--Side View Controller-->
+        <scene sceneID="F8b-98-Dav">
+            <objects>
+                <viewController storyboardIdentifier="CanPoliceOfficerDo" id="N5j-hG-IPB" customClass="SideViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zDE-ft-Ldl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2.png" id="A2v-ky-iJN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle.png" id="5l4-mq-Kcq">
+                                <rect key="frame" x="67" y="88" width="240" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="pleaseWork" editable="NO" textAlignment="justified" selectable="NO" id="olG-Cc-BAl">
+                                <rect key="frame" x="26" y="123" width="322" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59447265630000001" green="0.56147173569999997" blue="0.58311180789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">License Disqualification 
+• Drinking Driving offences
+• Driving while under the influence
+• Failure to stop and render assistance
+
+Police Officers
+• The police have the right to check your vehical at any time for drugs, alcohol and whether the vehical is mechanically fit to be driven 
+• The police do not have to suspect that the driver is drunk before they stop a vehicle. 
+• Police have the right to conduct random spot checks for impaired drivers.  
+• When police officers pull you over, you do not have to answer a question, but it is advisable. 
+• Refusing to respond may lead the police to suspect you have consummed alcohol. 
+• If you refuse to provide a roadside breath screening test, you can be charged under the criminal code
+• The police may ask you to perform physical tests. You can choose not to perform tasks like walking in a straight line, but they may then demand a breath sample. 
+• You can be charged with multiple criminal impaired driving offences at the same time. This includes impaired driving, dangerous driving, and criminal negligence, as well as a charge of exceeding the legal blood alcohol limit (over 80 mg).
+
+License Disqualification 
+• Drinking Driving offences
+• Driving while under the influence
+• Failure to stop and render assistance
+
+Speeding tickets and penalties
+• 0-15 km = 0 demerit points,
+• 16-29 km = 3 demerit points
+• 30-49 km = 4 demerit points, 30 Day license suspension
+• G1 or G2 drivers speeding more than 30 km/h will have their license suspended
+
+Street Racing
+• More than 50km/h
+• License suspension for 7 days
+• The vehicle that was racing will be impounded for 7 days</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CdZ-8Y-GaB">
+                                <rect key="frame" x="104" y="568" width="166" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="afdadfwaed:" destination="N5j-hG-IPB" eventType="touchUpInside" id="g5X-aO-bfX"/>
+                                    <action selector="returnToPrev:" destination="BN6-Po-UQH" eventType="touchUpInside" id="wMh-k3-DiU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What can the police officer do?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Xb-cG-7Fy">
+                                <rect key="frame" x="12" y="35" width="351" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcB-dl-gNq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1302" y="2062"/>
+        </scene>
+        <!--Side View Controller-->
+        <scene sceneID="Kqa-CP-pMs">
+            <objects>
+                <viewController storyboardIdentifier="TypesOfInfractions" id="plC-gS-EdV" customClass="SideViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RjZ-oj-y32">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background2.png" id="eyo-Mc-2jX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="681"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greyreck.png" id="X5Z-yQ-jJc">
+                                <rect key="frame" x="0.0" y="232" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72646439389999995" green="0.73014891810000004" blue="0.73908203120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greyreck.png" id="5Bk-aF-JdP">
+                                <rect key="frame" x="0.0" y="334" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72646439389999995" green="0.73014891810000004" blue="0.73908203120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greyreck.png" id="URP-YM-5KV">
+                                <rect key="frame" x="0.0" y="436" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72646439389999995" green="0.73014891810000004" blue="0.73908203120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QIp-e4-92f">
+                                <rect key="frame" x="0.0" y="232" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Careless Driving Infractions">
+                                    <color key="titleColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="q8D-kd-wJy" kind="modal" id="oeb-8o-jlv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iDq-6M-JP7">
+                                <rect key="frame" x="0.0" y="334" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Failure to Stop / Remain">
+                                    <color key="titleColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="29r-pL-MgV" kind="modal" id="HwN-Wy-ufS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lawbalance.png" id="TVH-FZ-9j0">
+                                <rect key="frame" x="7" y="353" width="37" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MNl-Ap-Kj1">
+                                <rect key="frame" x="0.0" y="436" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Lack of Documentation Infractions">
+                                    <color key="titleColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cX8-yB-DUz" kind="modal" id="5dJ-x7-Ird"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Types of Infractions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e5O-cO-xVY">
+                                <rect key="frame" x="30" y="37" width="315" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap to get more information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ugg-kQ-3BQ">
+                                <rect key="frame" x="30" y="96" width="315" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <color key="textColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle.png" id="NqL-V3-5MK">
+                                <rect key="frame" x="67" y="77" width="240" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h9u-O0-FSY">
+                                <rect key="frame" x="104" y="550" width="166" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fafd:" destination="plC-gS-EdV" eventType="touchUpInside" id="XdO-dn-n4p"/>
+                                    <action selector="returnToPrev:" destination="BN6-Po-UQH" eventType="touchUpInside" id="DWN-Jp-jIh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greyreck.png" id="WUp-ul-Sie">
+                                <rect key="frame" x="0.0" y="136" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72646439389999995" green="0.73014891810000004" blue="0.73908203120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JUI-hG-bpS">
+                                <rect key="frame" x="0.0" y="136" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Important Infractions ">
+                                    <color key="titleColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JoB-sR-plG" kind="modal" id="SnR-PS-XRV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lawbalance.png" id="38f-l2-EaS">
+                                <rect key="frame" x="7" y="155" width="37" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lawbalance.png" id="Naq-J5-TWV">
+                                <rect key="frame" x="7" y="251" width="37" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lawbalance.png" id="cWW-bI-Z43">
+                                <rect key="frame" x="7" y="455" width="37" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WKo-8g-sJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-289" y="2062"/>
+        </scene>
+        <!--Side View Controller-->
+        <scene sceneID="9L9-Nc-tzd">
+            <objects>
+                <viewController storyboardIdentifier="CarelessInfractions" id="q8D-kd-wJy" customClass="SideViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oUx-bo-PNl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background2.png" id="o74-5u-fIr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qYx-Fe-SGe">
+                                <rect key="frame" x="104" y="558" width="166" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="afdsd:" destination="q8D-kd-wJy" eventType="touchUpInside" id="mbT-GZ-BJy"/>
+                                    <action selector="returnToPrev:" destination="BN6-Po-UQH" eventType="touchUpInside" id="WKF-uo-KeY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Careless Driving Infractions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X9z-pQ-vKe">
+                                <rect key="frame" x="30" y="35" width="315" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle.png" id="tSq-7y-hA2">
+                                <rect key="frame" x="67" y="80" width="240" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="pleaseWork" editable="NO" textAlignment="justified" selectable="NO" id="brl-kB-Y9x">
+                                <rect key="frame" x="26" y="135" width="322" height="378"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59447265630000001" green="0.56147173569999997" blue="0.58311180789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Careless Driving with  A to G licences
+• A fine of $490 if settles out of court
+• A fine up to $1,000 if you lose in court
+• Three demerit points
+
+Careless Driving for Novice Driving, G1, G2, M1 or M2
+• A 30-day licence suspension for a first conviction
+• A 90-day license suspension for a second conviction  
+• Cancellation of your licence for a third removal
+• Must redo the Graduated Licensing System program
+
+Careless driving and you endanger other people
+• Six demerit points
+• Fines up to $2,000
+• A jail term of six months
+• A license suspension up to two years
+
+Careless driving causing bodily harm (criminal offence)
+• Up to 10 years in jail
+
+Careless driving causing death (criminal offence)
+• Up to 14 years in jail</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14a-m5-Wl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-760.5" y="2893.5"/>
+        </scene>
+        <!--Side View Controller-->
+        <scene sceneID="8dd-9x-yMa">
+            <objects>
+                <viewController storyboardIdentifier="FailureInfractions" id="29r-pL-MgV" customClass="SideViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EKR-nT-sS1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background2.png" id="7hB-1U-HN3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Failure to Stop / Remain Infractions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fRg-kP-JTP">
+                                <rect key="frame" x="-5" y="35" width="386" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <color key="textColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle.png" id="OfB-w2-Lud">
+                                <rect key="frame" x="67" y="75" width="240" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="pleaseWork" editable="NO" textAlignment="justified" selectable="NO" id="iYZ-gg-oRC">
+                                <rect key="frame" x="27" y="131" width="322" height="405"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59447265630000001" green="0.56147173569999997" blue="0.58311180789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Failing to stop for a red light
+• Three demerit point
+• If you fight the ticket and fail, a fine between $200 and $1,000
+• Remains on your record for three years
+
+Failure to stop for a school bus
+• A fine
+• Six demerit points
+
+Failure to report an accident
+• A fine up to $1,000
+• Three demerit point
+• Dramatic insurance increase
+
+Failure to remain or return to an accident
+ (Highway traffic Act, or Criminal Code)
+• You must report accidents that involve injury or property damage that is over $1,000
+• A fine between $400 and $2000 
+• Seven demerit points
+• Up to 6 months in jail
+• Suspended license for up to two years</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C33-IP-lcW">
+                                <rect key="frame" x="105" y="575" width="166" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dfadfd:" destination="29r-pL-MgV" eventType="touchUpInside" id="oMj-wk-jnA"/>
+                                    <action selector="returnToPrev:" destination="BN6-Po-UQH" eventType="touchUpInside" id="cu9-DQ-8jR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHA-2w-93d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226.5" y="2893.5"/>
+        </scene>
+        <!--Side View Controller-->
+        <scene sceneID="O7T-i3-dHB">
+            <objects>
+                <viewController storyboardIdentifier="DocumentationInfractions" id="cX8-yB-DUz" customClass="SideViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NIh-jW-AzN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background2.png" id="ttl-Lf-W4m">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lack of Documentation Infractions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xU2-zI-2QB">
+                                <rect key="frame" x="4" y="34" width="368" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <color key="textColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle.png" id="jdF-8V-Ll0">
+                                <rect key="frame" x="67" y="78" width="240" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="pleaseWork" editable="NO" textAlignment="justified" selectable="NO" id="3Lj-O0-kLS">
+                                <rect key="frame" x="26" y="134" width="322" height="389"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59447265630000001" green="0.56147173569999997" blue="0.58311180789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Driving with a suspended license convicted under the Highway Traffic Act
+• A fine of $1000 to $5000 
+• Six months in prison
+
+Driving with a disqualified license convicted under the Criminal Code
+• First offence, $5,000 to $25, 000
+• Second offence $10,000 to $50,000
+
+Driving without insurance 
+• You have up to 48 hours to produce your insurance card
+• A fine between $5,00 and $25,000</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3cq-qr-ULc">
+                                <rect key="frame" x="105" y="565" width="166" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="adfaera:" destination="cX8-yB-DUz" eventType="touchUpInside" id="foL-wy-q9q"/>
+                                    <action selector="returnToPrev:" destination="BN6-Po-UQH" eventType="touchUpInside" id="BEZ-m0-Mfq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVE-Rw-rV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295.5" y="2893.5"/>
+        </scene>
+        <!--Side View Controller-->
+        <scene sceneID="wjr-Sj-QDP">
+            <objects>
+                <viewController storyboardIdentifier="ImportantInfractions" id="JoB-sR-plG" customClass="SideViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TTb-ui-H3b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2.png" id="QJI-hb-rcU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Important Infractions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AE4-jw-w7w">
+                                <rect key="frame" x="3" y="33" width="368" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <color key="textColor" red="0.9829279608" green="0.98791323180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="pleaseWork" editable="NO" textAlignment="justified" selectable="NO" id="xqR-TV-CGg">
+                                <rect key="frame" x="26" y="117" width="322" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59447265630000001" green="0.56147173569999997" blue="0.58311180789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Impaired driving
+• Lose your vehicle
+• Have your vehicle impounded
+• Pay fines
+• Attend an education or treatment program
+• Be required to install an ignition interlock device on your vehicle
+• Pend time in jail
+• Have a criminal record
+
+Driving under the influence of alcohol 
+• Driving with a BAC over 0.08 is a criminal offence
+• All drivers under the age of 21, or novice drivers cannot have any presence of alcohol in their blood. If you are caught with a BAC above zero, your license will be suspended on the spot. If you are convicted, you may also be fined between $60 and $500. If you are a novice driver, your licence may be cancelled. 
+• You may need to install an approved ignition interlock if you have received a licence suspension more than two times within a 10 year period. 
+• The police can immediately suspend your licence for three days for registering a blood alcohol concentration (BAC) of between 0.05 and 0.08 (50 - 80 milligrams of alcohol in every 100 millilitres of blood) for a first occurrence. 
+• Your licence can be suspended for seven days for a second and thid occurrence and 30 days.
+• If your breath sample exceeds the legal limit of 0.08 BAC, your driver's licence will be automatically suspended for 90 days. If you are found guilty of exceeding the legal limit of alcohol, you likely have to pay a minimum penalty of a $1,000 fine and a one year licence suspension if it is your first offence. 
+• For a second offence, you will usually be subject to a minimum penalty of 30 days in prison, and a minimum three year licence suspension. 
+• For a third offence, you will have a minimum penalty of 120 days in prison and a lengthy licence suspension.
+
+Following too closely 
+• A fine between $90 and $500 
+• Four demerit points</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vW3-A8-CHi">
+                                <rect key="frame" x="104" y="562" width="166" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="afdfaaewf:" destination="JoB-sR-plG" eventType="touchUpInside" id="2Xl-Xh-Px7"/>
+                                    <action selector="returnToPrev:" destination="BN6-Po-UQH" eventType="touchUpInside" id="nk6-Ig-bKR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle.png" id="hUM-gU-QeX">
+                                <rect key="frame" x="67" y="73" width="240" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kmq-o6-hKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.5" y="2888.5"/>
+        </scene>
+        <!--Advice View Controller-->
+        <scene sceneID="PUg-0y-7RR">
+            <objects>
+                <viewController id="BN6-Po-UQH" customClass="AdviceViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lZQ-Wo-tnY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background2.png" id="V4S-fw-Pg3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HVB-s5-XOk">
+                                <rect key="frame" x="104" y="557" width="166" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnToPrev:" destination="BN6-Po-UQH" eventType="touchUpInside" id="rXR-Qy-hte"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loading..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eQh-ns-yZl">
+                                <rect key="frame" x="28" y="121" width="320" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.98292796083591094" green="0.98791323183970581" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lawbalance.png" id="YsD-Jc-N00">
+                                <rect key="frame" x="133" y="20" width="109" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loading..." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8by-Db-tg0">
+                                <rect key="frame" x="70" y="490" width="236" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.99349832214765099" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="pleaseWork" editable="NO" text="Click the mic to tell us your problem - we will find a solution" textAlignment="center" selectable="NO" id="P72-KW-fDZ">
+                                <rect key="frame" x="26" y="181" width="322" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59447265630000001" green="0.56147173569999997" blue="0.58311180789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="TitleLabel" destination="eQh-ns-yZl" id="vLO-Y0-Ica"/>
+                        <outlet property="bodyLabel" destination="P72-KW-fDZ" id="zpf-oB-p6y"/>
+                        <outlet property="goBack" destination="HVB-s5-XOk" id="Fcb-D6-kpj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdi-Vr-MdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1947" y="431"/>
+        </scene>
+        <!--SecondViewController-->
+        <scene sceneID="ZHf-AU-QpA">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" title="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VIV-KK-uPY" customClass="SecondViewController" customModule="Akcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DsY-CT-WhV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background2.png" id="dvD-AQ-7dT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LBo-kD-aUd">
+                                <rect key="frame" x="104" y="484" width="166" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Confirm" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTapped:" destination="VIV-KK-uPY" eventType="touchUpInside" id="Hhq-pj-6GQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Let us help you," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AJ1-pG-eAT">
+                                <rect key="frame" x="113" y="57" width="149" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What seems to be the problem?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cfE-mX-uha">
+                                <rect key="frame" x="36" y="93" width="303" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle.png" id="8EK-7V-mMX">
+                                <rect key="frame" x="67" y="129" width="240" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greyreck.png" id="vOs-BS-dYK">
+                                <rect key="frame" x="16" y="188" width="343" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88720703125" green="0.86692812603153502" blue="0.86109147514456275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Click the mic to tell us your problem - we will find a solution" textAlignment="center" selectable="NO" id="BMY-ja-nez">
+                                <rect key="frame" x="26" y="196" width="322" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59447265625000001" green="0.56147173571349118" blue="0.58311180793919826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="or write text here" textAlignment="natural" minimumFontSize="17" id="gqe-oh-iJ1">
+                                <rect key="frame" x="26" y="338" width="322" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.645390625" green="0.60956309869292646" blue="0.63305669354873562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="circle.png" id="VlL-ZJ-lwz">
+                                <rect key="frame" x="117" y="435" width="141" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sFg-mc-zEq">
+                                <rect key="frame" x="162" y="457" width="51" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.97298710824943335" blue="0.99260650611239098" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="mic.png"/>
+                                <connections>
+                                    <action selector="microphoneTapped:" destination="VIV-KK-uPY" eventType="touchUpInside" id="2rx-oU-sQt"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l7e-Vu-mrE">
+                                <rect key="frame" x="131" y="547" width="113" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel" backgroundImage="Rectangleakcess.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelTapped:" destination="VIV-KK-uPY" eventType="touchUpInside" id="wSd-yl-8Xl"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="InCaseLOGO.png" id="al3-gB-yvn">
+                                <rect key="frame" x="16" y="589" width="63" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kX6-LM-4tQ"/>
+                    <connections>
+                        <outlet property="CancelButton" destination="l7e-Vu-mrE" id="hUo-3l-vIu"/>
+                        <outlet property="DriveButton" destination="LBo-kD-aUd" id="vdv-CJ-fRQ"/>
+                        <outlet property="SubstanceButton" destination="LBo-kD-aUd" id="5eh-eJ-mGN"/>
+                        <outlet property="btnBG" destination="VlL-ZJ-lwz" id="avV-fV-hcx"/>
+                        <outlet property="button" destination="sFg-mc-zEq" id="mQx-E8-6vE"/>
+                        <outlet property="questionTextField" destination="gqe-oh-iJ1" id="77d-tM-jof"/>
+                        <outlet property="textView" destination="BMY-ja-nez" id="Eer-ir-65M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCn-R5-DqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1357.5" y="429.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="InCaseLOGO.png" width="1909" height="1711"/>
+        <image name="Rectangle.png" width="158" height="319"/>
+        <image name="Rectangleakcess.png" width="152" height="51"/>
+        <image name="background2.png" width="264" height="551"/>
+        <image name="circle.png" width="300" height="300"/>
+        <image name="greyreck.png" width="1" height="1"/>
+        <image name="lawbalance.png" width="100" height="100"/>
+        <image name="mic.png" width="147" height="298"/>
+        <image name="newgreyborder.png" width="481" height="816"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
